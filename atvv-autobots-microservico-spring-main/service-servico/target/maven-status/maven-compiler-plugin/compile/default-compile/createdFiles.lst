@@ -1,0 +1,4 @@
+com\autobots\automanager\controles\ServicoControle.class
+com\autobots\automanager\entidades\Servico.class
+com\autobots\automanager\repositorios\ServicoRepositorio.class
+com\autobots\automanager\ServicoApplication.class

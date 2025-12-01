@@ -1,0 +1,4 @@
+com\autobots\automanager\MercadoriaApplication.class
+com\autobots\automanager\repositorios\MercadoriaRepositorio.class
+com\autobots\automanager\entidades\Mercadoria.class
+com\autobots\automanager\controles\MercadoriaControle.class

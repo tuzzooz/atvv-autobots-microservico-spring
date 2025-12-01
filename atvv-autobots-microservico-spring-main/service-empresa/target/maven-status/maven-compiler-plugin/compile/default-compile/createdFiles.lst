@@ -1,0 +1,4 @@
+com\autobots\automanager\entidades\Empresa.class
+com\autobots\automanager\EmpresaApplication.class
+com\autobots\automanager\repositorios\EmpresaRepositorio.class
+com\autobots\automanager\controles\EmpresaControle.class

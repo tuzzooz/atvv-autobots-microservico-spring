@@ -1,0 +1,7 @@
+com\autobots\automanager\entidades\Telefone.class
+com\autobots\automanager\FuncionarioApplication.class
+com\autobots\automanager\repositorios\FuncionarioRepositorio.class
+com\autobots\automanager\controles\FuncionarioControle.class
+com\autobots\automanager\entidades\Documento.class
+com\autobots\automanager\entidades\Funcionario.class
+com\autobots\automanager\entidades\Endereco.class

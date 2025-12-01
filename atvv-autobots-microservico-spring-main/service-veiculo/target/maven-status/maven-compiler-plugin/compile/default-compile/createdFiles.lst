@@ -1,0 +1,4 @@
+com\autobots\automanager\repositorios\VeiculoRepositorio.class
+com\autobots\automanager\controles\VeiculoControle.class
+com\autobots\automanager\VeiculoApplication.class
+com\autobots\automanager\entidades\Veiculo.class

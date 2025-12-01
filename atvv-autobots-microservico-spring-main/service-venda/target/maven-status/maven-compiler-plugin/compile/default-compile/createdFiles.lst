@@ -1,0 +1,5 @@
+com\autobots\automanager\entidades\Venda.class
+com\autobots\automanager\controles\VendaControle.class
+com\autobots\automanager\entidades\ItemVenda.class
+com\autobots\automanager\VendaApplication.class
+com\autobots\automanager\repositorios\VendaRepositorio.class
