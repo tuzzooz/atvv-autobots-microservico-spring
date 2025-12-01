@@ -44,7 +44,8 @@ service-(exempplo)/
 
 ## Arquitetura
 
-|--------------|-------|-----------|---------------|
+| Microserviço | Porta | Descrição | URL |
+|---|---:|---|---|
 | service-empresa | 8080 | Gerenciamento de empresas/lojas | http://localhost:8080/empresas |
 | service-cliente | 8081 | Cadastro de clientes | http://localhost:8081/clientes |
 | service-funcionario | 8082 | Cadastro de funcionários | http://localhost:8082/funcionarios |
@@ -52,7 +53,6 @@ service-(exempplo)/
 | service-mercadoria | 8084 | Estoque de mercadorias | http://localhost:8084/mercadorias |
 | service-veiculo | 8085 | Registro de veículos | http://localhost:8085/veiculos |
 | service-venda | 8086 | Controle de vendas | http://localhost:8086/vendas |
-|--------------|-------|-----------|---------------|
 
 ## Como Executar
 
