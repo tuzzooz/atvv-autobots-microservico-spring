@@ -52,6 +52,7 @@ service-(exempplo)/
 | service-mercadoria | 8084 | Estoque de mercadorias | http://localhost:8084/mercadorias |
 | service-veiculo | 8085 | Registro de veículos | http://localhost:8085/veiculos |
 | service-venda | 8086 | Controle de vendas | http://localhost:8086/vendas |
+|--------------|-------|-----------|---------------|
 
 ## Como Executar
 
@@ -68,22 +69,7 @@ Deve retornar: `openjdk version "17.x.x"` ou superior
 cd .\atvv-autobots-microservico-spring-main\
 ```
 
-### Executando Individualmente
-
-
-Navegue até a pasta do microserviço e execute:
-
-```powershell
-# Windows
-cd service-empresa
-.\mvnw.cmd spring-boot:run
-
-# Linux/Mac
-cd service-empresa
-./mvnw spring-boot:run
-```
-
-**Manualmente (cada um em um terminal diferente):**
+### Para os Executar Manualmente ( em terminais diferentes!)
 ```powershell
 cd service-empresa 
 .\mvnw.cmd spring-boot:run
