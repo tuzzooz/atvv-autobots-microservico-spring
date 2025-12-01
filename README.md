@@ -30,6 +30,7 @@ service-(exempplo)/
 ├── mvnw
 ├── mvnw.cmd
 └── pom.xml
+
 ```
 
 ---
@@ -82,22 +83,28 @@ cd service-empresa
 ./mvnw spring-boot:run
 ```
 
-### Executando Todos os Microserviços
-
-**Windows PowerShell:**
-```powershell
-.\executar-todos-microservicos.ps1
-```
-
 **Manualmente (cada um em um terminal diferente):**
 ```powershell
-cd service-empresa && .\mvnw.cmd spring-boot:run
-cd service-cliente && .\mvnw.cmd spring-boot:run
-cd service-funcionario && .\mvnw.cmd spring-boot:run
-cd service-servico && .\mvnw.cmd spring-boot:run
-cd service-mercadoria && .\mvnw.cmd spring-boot:run
-cd service-veiculo && .\mvnw.cmd spring-boot:run
-cd service-venda && .\mvnw.cmd spring-boot:run
+cd service-empresa 
+.\mvnw.cmd spring-boot:run
+
+cd service-cliente
+.\mvnw.cmd spring-boot:run
+
+cd service-funcionario
+.\mvnw.cmd spring-boot:run
+
+cd service-servico
+.\mvnw.cmd spring-boot:run
+
+cd service-mercadoria
+.\mvnw.cmd spring-boot:run
+
+cd service-veiculo
+.\mvnw.cmd spring-boot:run
+
+cd service-venda
+.\mvnw.cmd spring-boot:run
 ```
 
 ## Testes CRUD 
@@ -604,7 +611,7 @@ curl http://localhost:8081/clientes/empresa/1
 
 **POST - Criar novo cliente:**
 ```powershell
-curl -X POST http://localhost:8081/clientes -H "Content-Type: application/json" -d '{\"nome\":\"Pedro Santos\",\"email\":\"pedro@email.com\",\"empresaId\":1,\"documentos\":[{\"tipo\":\"CPF\",\"numero\":\"999.999.999-99\"}],\"telefones\":[{\"ddd\":\"11\",\"numero\":\"99999-9999\",\"tipo\":\"Celular\"}],\"endereco\":{\"estado\":\"SP\",\"cidade\":\"São Paulo\",\"bairro\":\"Centro\",\"rua\":\"Rua Nova\",\"numero\":\"100\",\"cep\":\"01000-000\"}}'
+curl -X POST http://localhost:8081/clientes -H "Content-Type: application/json" -d '{\"nome\":\"Pedro Martins\",\"email\":\"pedro@email.com\",\"empresaId\":1,\"documentos\":[{\"tipo\":\"CPF\",\"numero\":\"999.999.999-99\"}],\"telefones\":[{\"ddd\":\"11\",\"numero\":\"99999-9999\",\"tipo\":\"Celular\"}],\"endereco\":{\"estado\":\"SP\",\"cidade\":\"São Paulo\",\"bairro\":\"Centro\",\"rua\":\"Rua Nova\",\"numero\":\"100\",\"cep\":\"01000-000\"}}'
 ```
 
 **PUT - Atualizar cliente:**
@@ -631,12 +638,12 @@ curl http://localhost:8082/funcionarios/empresa/1
 
 **POST - Criar novo funcionário:**
 ```powershell
-curl -X POST http://localhost:8082/funcionarios -H "Content-Type: application/json" -d '{\"nome\":\"Roberto Lima\",\"email\":\"roberto@automanager.com\",\"perfil\":\"Vendedor\",\"dataAdmissao\":\"2024-11-29\",\"empresaId\":1,\"documentos\":[{\"tipo\":\"CPF\",\"numero\":\"888.888.888-88\"}],\"telefones\":[{\"ddd\":\"11\",\"numero\":\"98888-8888\",\"tipo\":\"Celular\"}],\"endereco\":{\"estado\":\"SP\",\"cidade\":\"São Paulo\",\"bairro\":\"Pinheiros\",\"rua\":\"Rua dos Pinheiros\",\"numero\":\"500\",\"cep\":\"05422-000\"}}'
+curl -X POST http://localhost:8082/funcionarios -H "Content-Type: application/json" -d '{\"nome\":\"Otávio Lima\",\"email\":\"roberto@automanager.com\",\"perfil\":\"Vendedor\",\"dataAdmissao\":\"2024-11-29\",\"empresaId\":1,\"documentos\":[{\"tipo\":\"CPF\",\"numero\":\"888.888.888-88\"}],\"telefones\":[{\"ddd\":\"11\",\"numero\":\"98888-8888\",\"tipo\":\"Celular\"}],\"endereco\":{\"estado\":\"SP\",\"cidade\":\"São Paulo\",\"bairro\":\"Lapa\",\"rua\":\"Rua da Lapa\",\"numero\":\"500\",\"cep\":\"05422-000\"}}'
 ```
 
 **PUT - Atualizar funcionário:**
 ```powershell
-curl -X PUT http://localhost:8082/funcionarios/1 -H "Content-Type: application/json" -d '{\"nome\":\"Carlos Souza Jr\",\"email\":\"carlos.jr@automanager.com\",\"perfil\":\"Gerente Geral\",\"dataAdmissao\":\"2024-11-29\",\"empresaId\":1,\"documentos\":[{\"tipo\":\"CPF\",\"numero\":\"111.222.333-44\"}],\"telefones\":[{\"ddd\":\"11\",\"numero\":\"91111-2222\",\"tipo\":\"Celular\"}],\"endereco\":{\"estado\":\"SP\",\"cidade\":\"São Paulo\",\"bairro\":\"Vila Mariana\",\"rua\":\"Rua Domingos de Morais\",\"numero\":\"2000\",\"cep\":\"04035-000\"}}'
+curl -X PUT http://localhost:8082/funcionarios/1 -H "Content-Type: application/json" -d '{\"nome\":\"Bruno Henrique\",\"email\":\"carlos.jr@automanager.com\",\"perfil\":\"Gerente Geral\",\"dataAdmissao\":\"2024-11-29\",\"empresaId\":1,\"documentos\":[{\"tipo\":\"CPF\",\"numero\":\"111.222.333-44\"}],\"telefones\":[{\"ddd\":\"11\",\"numero\":\"91111-2222\",\"tipo\":\"Celular\"}],\"endereco\":{\"estado\":\"RJ\",\"cidade\":\"Rio de Janeiro\",\"bairro\":\"Botafogo\",\"rua\":\"Rua da Esperança\",\"numero\":\"2000\",\"cep\":\"04035-000\"}}'
 ```
 
 **DELETE - Deletar funcionário:**
@@ -760,8 +767,6 @@ curl -X DELETE http://localhost:8086/vendas/1
 ---
 
 ## Console H2 Database
-
-Cada microserviço possui um console web para visualizar e manipular os dados em tempo real:
 
 | Microserviço | URL Console | JDBC URL |
 |--------------|-------------|----------|
